@@ -1,5 +1,5 @@
 # DIGILIB - Proyecto Integrador
-> Sistema para App de Biblioteca Digital Segura para la Solicitud y Préstamo de Libros en Línea por Estudiantes[cite: 1].
+> Sistema para App de Biblioteca Digital Segura para la Solicitud y Préstamo de Libros en Línea por Estudiantes.
 
 ## 🎓 Información Académica
 * **Institución:** Universidad de San Buenaventura
@@ -10,11 +10,11 @@
 ---
 
 ## 👥 Integrantes
-| Nombre Completo | Rol en el Proyecto | Usuario GitLab |
+| Nombre Completo | Rol en el Proyecto | Usuario Github |
 | :--- | :--- | :--- |
-| Sanabria Castro Samuel Felipe | Base de Datos / Backend | @samuelsanabria032 |
-| Mieles Camacho Gerson Estiven | Frontend / UX | @ |
-| Carlos David Aponte Barajas | Lider / QA | @ |
+| Sanabria Castro Samuel Felipe | Base de Datos / Backend
+| Mieles Camacho Gerson Estiven | Frontend / UX 
+| Carlos David Aponte Barajas | Lider / QA
 
 ---
 
