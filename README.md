@@ -36,10 +36,6 @@ DIGILIB es una plataforma web desarrollada para automatizar la gestión administ
 * **Herramientas:** Git, GitLab
 
 ---
+## Modelo Relacional
+<img width="1385" height="857" alt="image" src="https://github.com/user-attachments/assets/65612992-36d0-4e93-b970-8a4f8ac83fc0" />
 
-## ⚙️ Instalación y Ejecución local
-
-1. Clonar el repositorio:
-   ```bash
-   git clone [https://gitlab.com/universidad-san-buenaventura/digilib.git](https://gitlab.com/universidad-san-buenaventura/digilib.git)
-   cd digilib
