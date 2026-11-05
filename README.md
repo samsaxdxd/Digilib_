@@ -4,7 +4,7 @@
 ## 🎓 Información Académica
 * **Institución:** Universidad de San Buenaventura
 * **Programa:** Tecnología en Desarrollo de Software
-* **Semestre:** I Semestre
+* **Semestre:** II Semestre
 * **Asignatura:** Fundamentos de Proyectos de Tecnología
 
 ---
