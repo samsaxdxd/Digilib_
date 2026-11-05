@@ -33,7 +33,7 @@ DIGILIB es una plataforma web desarrollada para automatizar la gestión administ
 ## 🛠️ Stack Tecnológico
 * **Metodología:** Scrum / Modelado UWE
 * **Lenguajes / Base de Datos:** Entorno Web / Gestor Relacional
-* **Herramientas:** Git, GitLab
+* **Herramientas:** Github
 
 ---
 ## Modelo Relacional
