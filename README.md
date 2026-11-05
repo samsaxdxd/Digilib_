@@ -10,8 +10,8 @@
 ---
 
 ## 👥 Integrantes
-| Nombre Completo | Rol en el Proyecto | Usuario Github |
-| :--- | :--- | :--- |
+| Nombre Completo | Rol en el Proyecto |
+| :--- | :--- |
 | Sanabria Castro Samuel Felipe | Base de Datos / Backend
 | Mieles Camacho Gerson Estiven | Frontend / UX 
 | Carlos David Aponte Barajas | Lider / QA
