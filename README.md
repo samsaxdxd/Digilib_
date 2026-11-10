@@ -19,7 +19,7 @@
 ---
 
 ## 🚀 Descripción del Proyecto
-DIGILIB es una plataforma web desarrollada para automatizar la gestión administrativa y operativa de la biblioteca universitaria en la Universidad de San Buenaventura (Sede Suba, Bogotá). El sistema optimiza el control del inventario bibliográfico, la administración de usuarios y la trazabilidad de solicitudes, préstamos, devoluciones y multas, reemplazando registros manuales e ineficientes.
+DIGILIB es una plataforma web desarrollada para automatizar la gestión administrativa y operativa de la biblioteca universitaria en la Universidad de San Buenaventura (Sede Bogotá). El sistema optimiza el control del inventario bibliográfico, la administración de usuarios y la trazabilidad de solicitudes, préstamos, devoluciones y multas, reemplazando registros manuales e ineficientes.
 
 ### 🎯 Objetivos
 1. **General:** Desarrollar un sistema de biblioteca digital seguro para gestionar de manera eficiente el registro, consulta, solicitud, préstamo y devolución de material bibliográfico, así como la administración de usuarios y multas.
