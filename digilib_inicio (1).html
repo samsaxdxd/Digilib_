@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIGILIB | Inicio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #233044; }
+    header { background: #2157a5; padding: 18px 8%; color: white; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    header strong { font-size: 23px; }
+    header a { color: white; text-decoration: none; margin-left: 20px; font-size: 14px; }
+    main { max-width: 900px; margin: 45px auto; padding: 0 20px; }
+    h1 { margin-bottom: 8px; font-size: 29px; }
+    p { color: #58667a; }
+    .search { display: flex; gap: 9px; margin: 30px 0; }
+    .search input { flex: 1; min-width: 0; padding: 13px; border: 1px solid #cdd6e2; border-radius: 7px; font-size: 15px; }
+    button { background: #2157a5; color: white; border: 0; border-radius: 7px; padding: 13px 20px; cursor: pointer; }
+    button:hover { background: #16417f; }
+    h2 { font-size: 19px; margin-top: 32px; }
+    .books { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 15px; margin-top: 16px; }
+    .book { background: white; border: 1px solid #e2e7ee; border-radius: 9px; padding: 20px; }
+    .book .emoji { font-size: 36px; }
+    .book h3 { margin: 14px 0 6px; font-size: 17px; }
+    .book p { margin: 0 0 15px; font-size: 13px; }
+    .available { color: #218052; font-size: 13px; font-weight: bold; }
+    .empty { display: none; margin-top: 18px; }
+    footer { text-align: center; font-size: 12px; color: #8290a0; padding: 40px 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>📚 DIGILIB</strong>
+    <nav><a href="digilib_inicio.html">Inicio</a><a href="#catalogo">Catálogo</a><a href="#" onclick="alert('Sección de mis préstamos: próxima pantalla del prototipo.'); return false;">Mis préstamos</a><a href="digilib_login.html">Cerrar sesión</a></nav>
+  </header>
+  <main>
+    <h1>¡Bienvenido a DIGILIB!</h1>
+    <p>Busca libros y consulta el catálogo de tu biblioteca universitaria.</p>
+    <form class="search" onsubmit="buscar(event)">
+      <input id="busqueda" type="search" placeholder="Buscar libro por título o autor..." aria-label="Buscar libros">
+      <button type="submit">Buscar</button>
+    </form>
+    <section id="catalogo">
+      <h2>Libros disponibles</h2>
+      <div class="books" id="libros">
+        <article class="book" data-text="introduccion a la programacion">
+          <div class="emoji">📘</div><h3>Introducción a la programación</h3><p>Área: Tecnología</p><span class="available">● Disponible</span>
+        </article>
+        <article class="book" data-text="calculo basico matematicas">
+          <div class="emoji">📗</div><h3>Cálculo básico</h3><p>Área: Matemáticas</p><span class="available">● Disponible</span>
+        </article>
+        <article class="book" data-text="fundamentos de bases de datos sistemas">
+          <div class="emoji">📙</div><h3>Fundamentos de bases de datos</h3><p>Área: Sistemas</p><span class="available">● Disponible</span>
+        </article>
+      </div>
+      <p class="empty" id="sinResultados">No se encontraron libros con esa búsqueda.</p>
+    </section>
+  </main>
+  <footer>DIGILIB · Prototipo de biblioteca digital</footer>
+  <script>
+    function buscar(event) {
+      event.preventDefault();
+      const q = document.getElementById('busqueda').value.trim().toLocaleLowerCase('es');
+      const libros = document.querySelectorAll('.book');
+      let encontrados = 0;
+      libros.forEach(libro => {
+        const coincide = libro.dataset.text.includes(q);
+        libro.style.display = coincide ? '' : 'none';
+        if (coincide) encontrados++;
+      });
+      document.getElementById('sinResultados').style.display = encontrados ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
